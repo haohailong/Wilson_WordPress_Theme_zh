@@ -74,8 +74,8 @@
 		$next_attachment_url = get_attachment_link( $attachments[ 0 ]->ID );
 	endif;
 	?>
-						<a href="<?php echo esc_url( $prev_attachment_url ); ?>" class="post-nav-older" rel="attachment"><?php _e('&laquo; Previous<span> attachment</span>', 'wilson'); ?></a>
-						<a href="<?php echo esc_url( $next_attachment_url ); ?>" class="post-nav-newer" rel="attachment"><?php _e('Next<span> attachment</span> &raquo;', 'wilson'); ?></a>
+						<a href="<?php echo esc_url( $prev_attachment_url ); ?>" class="post-nav-older" rel="attachment"><?php _e('&laquo; <span>上一个附件</span>', 'wilson'); ?></a>
+						<a href="<?php echo esc_url( $next_attachment_url ); ?>" class="post-nav-newer" rel="attachment"><?php _e('<span>下一个附件</span> &raquo;', 'wilson'); ?></a>
 					
 						<div class="clear"></div>
 					
@@ -87,7 +87,7 @@
 															                        
 		   	<?php endwhile; else: ?>
 		
-				<p><?php _e("We couldn't find any posts that matched your query. Please try again.", "wilson"); ?></p>
+				<p><?php _e("找不到满足要求的文章或页面，请重试。", "wilson"); ?></p>
 			
 			<?php endif; ?>    
 				
