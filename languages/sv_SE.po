@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wilson v1.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-02-13 10:59:12+0000\n"
+"Last-Translator: anders <anders@andersnoren.se>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:13
+#@ wilson
+msgid "Error 404"
+msgstr "Error 404"
+
+#: 404.php:19
+#@ wilson
+msgid "It seems like you have tried to open a page that doesn't exist. It could have been deleted, moved, or it never existed at all. You are welcome to search for what you are looking for with the form below."
+msgstr "Det verkar som att du har försökt öppna en sida som inte existerar. Den kan ha raderats, flyttats eller har aldrig existerat överhuvudtaget. Vill du fortsätta leta är du välkommen att använda sökformuläret nedan."
+
+#: archive.php:10
+#@ wilson
+msgid "Date"
+msgstr "Datum"
+
+#: archive.php:12
+#@ wilson
+msgid "Month"
+msgstr "Månad"
+
+#: archive.php:14
+#@ wilson
+msgid "Year"
+msgstr "År"
+
+#: archive.php:16
+#@ wilson
+msgid "Category"
+msgstr "Kategori"
+
+#: archive.php:18
+#@ wilson
+msgid "Tag"
+msgstr "Etikett"
+
+#: archive.php:21
+#@ wilson
+msgid "Author"
+msgstr "Författare"
+
+#: archive.php:23
+#@ wilson
+msgid "Archive"
+msgstr "Arkiv"
+
+#: archive.php:58
+#@ wilson
+msgid "Older<span> posts</span>"
+msgstr "Äldre<span> inlägg</span>"
+
+#: archive.php:60
+#@ wilson
+msgid "Newer<span> posts</span>"
+msgstr "Nyare<span> inlägg</span>"
+
+#: comments.php:12
+#@ wilson
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "kommentar"
+msgstr[1] "kommentarer"
+
+#: comments.php:29
+#@ wilson
+msgid "Pingback"
+msgid_plural "Pingbacks"
+msgstr[0] "pingback"
+msgstr[1] "pingbacks"
+
+#: comments.php:47
+#@ wilson
+msgid "&laquo; Older<span> Comments</span>"
+msgstr "&laquo; Äldre<span> kommentarer</span>"
+
+#: comments.php:49
+#@ wilson
+msgid "Newer<span> Comments</span> &raquo;"
+msgstr "Nyare<span> kommentarer</span> &raquo;"
+
+#: comments.php:63
+#@ wilson
+msgid "Comments are closed."
+msgstr "Kommentarsfältet är stängt."
+
+#: comments.php:70
+#@ wilson
+msgid "Your email address will not be published."
+msgstr "Din e-postadress kommer inte att publiceras."
+
+#: comments.php:79
+#@ wilson
+msgid "Name"
+msgstr "Namn"
+
+#: comments.php:82
+#@ wilson
+msgid "Email"
+msgstr "E-post"
+
+#: comments.php:85
+#@ wilson
+msgid "Website"
+msgstr "Hemsida"
+
+#: content-aside.php:11
+#: content-quote.php:11
+#: content-video.php:90
+#: content.php:49
+#@ wilson
+msgid "Sticky"
+msgstr "Klistrat"
+
+#: content-video.php:58
+#: single.php:92
+#: widgets/video-widget.php:59
+#@ wilson
+msgid "Your browser does not support the video tag."
+msgstr "Din webbläsare stödjer inte video-taggen."
+
+#: content-video.php:84
+#: content.php:43
+#: single.php:118
+#@ wilson
+msgid "0 Comments"
+msgstr "0 kommentarer"
+
+#: content-video.php:84
+#: content.php:43
+#: single.php:118
+#@ wilson
+msgid "1 Comment"
+msgstr "1 kommentar"
+
+#: content-video.php:84
+#: content.php:43
+#: single.php:118
+#@ wilson
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: content-video.php:98
+#: content.php:57
+#: functions.php:264
+#: page.php:25
+#: single.php:124
+#: template-archives.php:101
+#@ wilson
+msgid "Edit"
+msgstr "Redigera"
+
+#: content.php:5
+#@ wilson
+msgid "Sticky post"
+msgstr "Klistrat inlägg"
+
+#: footer.php:25
+#: searchform.php:2
+#@ wilson
+msgid "Search form"
+msgstr "Sökformulär"
+
+#: footer.php:60
+#@ wilson
+msgid "Latest posts"
+msgstr "Senaste inläggen"
+
+#: footer.php:98
+#, php-format
+#@ wilson
+msgid "Theme by <a href=\"%s\">Anders Noren</a>"
+msgstr "Tema av <a href=\"%s\">Anders Noren</a>"
+
+#: footer.php:98
+#@ wilson
+msgid "To the top"
+msgstr "Till toppen"
+
+#: footer.php:98
+#@ wilson
+msgid "Up"
+msgstr "Upp"
+
+#: functions.php:62
+#@ wilson
+msgid "Sidebar"
+msgstr "Sidomenu"
+
+#: functions.php:64
+#@ wilson
+msgid "Widgets in this area will be displayed in the sidebar."
+msgstr "Widgets i det här området kommer att visas i sidomenyn."
+
+#: functions.php:71
+#@ wilson
+msgid "Footer A"
+msgstr "Sidfot A"
+
+#: functions.php:73
+#@ wilson
+msgid "Widgets in this area will be displayed in the left column in the footer."
+msgstr "Widgets i det här området kommer att visas i den vänstra kolumnen i sidfoten."
+
+#: functions.php:80
+#@ wilson
+msgid "Footer B"
+msgstr "Sidfot B"
+
+#: functions.php:82
+#@ wilson
+msgid "Widgets in this area will be displayed in the right column in the footer."
+msgstr "Widgets i det här området kommer att visas i den högra kolumnen i sidfoten."
+
+#: functions.php:117
+#, php-format
+#@ wilson
+msgid "Page %s"
+msgstr "Sida %s"
+
+#: functions.php:164
+#@ wilson
+msgid "Continue reading"
+msgstr "Fortsätt läsa"
+
+#: functions.php:223
+#@ wilson
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: functions.php:223
+#@ wilson
+msgid "(Edit)"
+msgstr "(Redigera)"
+
+#: functions.php:243
+#@ wilson
+msgid "(Post author)"
+msgstr "(inläggsförfattare)"
+
+#: functions.php:256
+#@ wilson
+msgid "Awaiting moderation"
+msgstr "Inväntar modellering"
+
+#: functions.php:266
+#@ wilson
+msgid "Reply"
+msgstr "Svara"
+
+#: functions.php:284
+#@ wilson
+msgid "Video URL (video post format)"
+msgstr "Video-adress (för video-inläggsformatet)"
+
+#: image.php:77
+#@ wilson
+msgid "&laquo; Previous<span> attachment</span>"
+msgstr "&laquo; Föregående<span> bilaga</span>"
+
+#: image.php:78
+#@ wilson
+msgid "Next<span> attachment</span> &raquo;"
+msgstr "Nästa<span> bilaga</span> &raquo;"
+
+#: image.php:90
+#: page.php:41
+#: single.php:194
+#: template-archives.php:117
+#@ wilson
+msgid "We couldn't find any posts that matched your query. Please try again."
+msgstr "Vi kunde inte hitta några inlägg som matchade din sökning. Vänligen försök igen."
+
+#: index.php:17
+#, php-format
+#@ wilson
+msgid "Page %s of %s"
+msgstr "Sida %s av %s"
+
+#: index.php:43
+#: search.php:36
+#@ wilson
+msgid "&laquo; Older<span> posts</span>"
+msgstr "&laquo; Äldre<span> inlägg</span>"
+
+#: index.php:45
+#: search.php:38
+#@ wilson
+msgid "Newer<span> posts</span> &raquo;"
+msgstr "Nyare<span> inlägg</span> &raquo;"
+
+#: search.php:11
+#: search.php:52
+#@ wilson
+msgid "Search"
+msgstr "Sök"
+
+#: search.php:67
+#@ wilson
+msgid "No results. Try again, would you kindly?"
+msgstr "Inga resultat. Försök gärna igen."
+
+#: single.php:152
+#@ wilson
+msgid "Categories:"
+msgstr "Kategorier:"
+
+#: single.php:154
+#@ wilson
+msgid "Tags:"
+msgstr "Etiketter:"
+
+#: single.php:164
+#@ wilson
+msgid "Previous post:"
+msgstr "Föregående inlägg:"
+
+#: single.php:176
+#@ wilson
+msgid "Next post:"
+msgstr "Nästa inlägg:"
+
+#: template-archives.php:33
+#@ wilson
+msgid "Last 30 Posts"
+msgstr "Senaste 30 inläggen"
+
+#: template-archives.php:47
+#@ wilson
+msgid "Archives by Categories"
+msgstr "Kategoriarkiv"
+
+#: template-archives.php:53
+#@ wilson
+msgid "Archives by Tags"
+msgstr "Etikettarkiv"
+
+#: template-archives.php:60
+#, php-format
+#@ wilson
+msgid "View all posts in %s"
+msgstr "Visa alla inlägg i %s"
+
+#: template-archives.php:69
+#@ wilson
+msgid "Contributors"
+msgstr "Författare"
+
+#: template-archives.php:75
+#@ wilson
+msgid "Archives by Year"
+msgstr "År"
+
+#: template-archives.php:81
+#@ wilson
+msgid "Archives by Month"
+msgstr "Månader"
+
+#: template-archives.php:87
+#@ wilson
+msgid "Archives by Day"
+msgstr "Dagar"
+
+#: widgets/dribbble-widget.php:10
+#@ wilson
+msgid "Displays your latest Dribbble photos."
+msgstr "Visar dina senaste Dribbble-bilder."
+
+#: widgets/dribbble-widget.php:54
+#, php-format
+#@ wilson
+msgid "Follow %s on Dribbble &raquo;"
+msgstr "Följ %s på Dribbble &raquo;"
+
+#: widgets/dribbble-widget.php:81
+#: widgets/flickr-widget.php:56
+#: widgets/video-widget.php:84
+#@ wilson
+msgid "Title"
+msgstr "Titel"
+
+#: widgets/dribbble-widget.php:87
+#@ wilson
+msgid "Dribbble username"
+msgstr "Dribbble-användarnamn"
+
+#: widgets/dribbble-widget.php:93
+#: widgets/flickr-widget.php:68
+#@ wilson
+msgid "Number of images to display:"
+msgstr "Antal bilder att visa:"
+
+#: widgets/flickr-widget.php:8
+#@ wilson
+msgid "Displays your latest Flickr photos."
+msgstr "Visar dina senaste Flickr-bilder."
+
+#: widgets/flickr-widget.php:34
+#@ wilson
+msgid "More on Flickr &raquo;"
+msgstr "Se mer på Flickr &raquo;"
+
+#: widgets/flickr-widget.php:62
+#@ wilson
+msgid "Flickr ID (use <a target=\"_blank\" href=\"http://www.idgettr.com\">idGettr</a>):"
+msgstr "Flickr ID (använd <a target=\"_blank\" href=\"http://www.idgettr.com\">idGettr</a>):"
+
+#: widgets/video-widget.php:8
+#@ wilson
+msgid "Displays a video of your choosing."
+msgstr "Visar ett videoklipp."
+
+#: widgets/video-widget.php:90
+#@ wilson
+msgid "Video URL"
+msgstr "Video-adress"
+

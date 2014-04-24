@@ -1,0 +1,101 @@
+*** Wilson changelog ***
+
+
+Version 1.17 (2014-04-08)
+-------------------------
+- Added .widget_links to the custom accent color setting
+
+
+Version 1.16 (2014-03-20)
+-------------------------
+- Added a few missing page elements to the accent color customization option
+
+
+Version 1.15 (2014-03-20)
+-------------------------
+- Added a theme option for accent color
+- Updated the theme description and theme tags
+
+
+Version 1.14 (2014-03-20)
+-------------------------
+- Tweaked the margins of featured-media and post-header
+- Fixed a video-widget bug
+
+
+Version 1.13 (2014-03-03)
+-------------------------
+- Further fixes to video
+- Fixed a bug with the html tag
+
+
+Version 1.12 (2014-02-24)
+-------------------------
+- Replaced the embeds in content-video.php, video-widget.php and single.php with WordPress built-in oEmbed function
+
+
+Version 1.11 (2014-02-18)
+-------------------------
+- Fixed an issue with iframes in video post format
+
+
+Version 1.10 (2014-02-18)
+-------------------------
+- Fixed a security glitch allowing users to enter js in the video post format url
+
+
+Version 1.09 (2014-02-17)
+-------------------------
+- Add max-width to .featured-media iframe
+
+
+Version 1.08 (2014-02-17)
+-------------------------
+- Fixed :focus text color on widget_search
+
+
+Version 1.07 (2014-02-17)
+-------------------------
+- Increased line-height on h3.blog-description and h2.post-title
+
+
+Version 1.06 (2014-02-17)
+-------------------------
+- Hidden img#wpstats smiley
+
+
+Version 1.05 (2014-02-17)
+-------------------------
+- Fixed the meta tag to be HTML 5 compliant
+- Fixed so that placeholder widgets are shown if no widgets have been added
+
+
+Version 1.04 (2014-02-13)
+-------------------------
+- Removed excessive license information
+
+
+Version 1.03 (2014-02-13)
+-------------------------
+- Added/fixed license information
+- Removed redundant functions from global.js
+- Added missing theme slugs in functions.php
+- Fixed WordPress.tv video resizing
+- Added word-break to .post-title to stop long post titles from breaking the design
+- Added Swedish translation
+
+
+Version 1.02 (2014-02-12)
+-------------------------
+- Updated theme description
+
+
+Version 1.01 (2014-02-12)
+-------------------------
+- New screenshot
+- Fixed textdomain bug
+- Misc bug fixes
+
+
+Version 1 (2014-02-12)
+-------------------------
