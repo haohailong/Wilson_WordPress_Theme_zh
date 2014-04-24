@@ -61,7 +61,7 @@ function wilson_sidebar_reg() {
 	register_sidebar(array(
 		'name' => __( 'Sidebar', 'wilson' ),
 		'id' => 'sidebar',
-		'description' => __( 'Widgets in this area will be displayed in the sidebar.', 'wilson' ),
+		'description' => __( '这里的小工具会显示在做侧边栏。.', 'wilson' ),
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
@@ -70,7 +70,7 @@ function wilson_sidebar_reg() {
 	register_sidebar(array(
 		'name' => __( 'Footer A', 'wilson' ),
 		'id' => 'footer-a',
-		'description' => __( 'Widgets in this area will be displayed in the left column in the footer.', 'wilson' ),
+		'description' => __( '这里的小工具会显示在底部左栏。', 'wilson' ),
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
@@ -79,7 +79,7 @@ function wilson_sidebar_reg() {
 	register_sidebar(array(
 		'name' => __( 'Footer B', 'wilson' ),
 		'id' => 'footer-b',
-		'description' => __( 'Widgets in this area will be displayed in the right column in the footer.', 'wilson' ),
+		'description' => __( '这里的小工具会显示在底部右栏。', 'wilson' ),
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 		'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
@@ -114,7 +114,7 @@ function wilson_wp_title( $title, $sep ) {
 
 	// Add a page number if necessary.
 	if ( $paged >= 2 || $page >= 2 )
-		$title = "$title $sep " . sprintf( __( 'Page %s', 'wilson' ), max( $paged, $page ) );
+		$title = "$title $sep " . sprintf( __( '第 %s 页', 'wilson' ), max( $paged, $page ) );
 
 	return $title;
 }
@@ -161,7 +161,7 @@ function wilson_if_featured_image_class($classes) {
 add_filter( 'the_content_more_link', 'wilson_custom_more_link', 10, 2 );
 
 function wilson_custom_more_link( $more_link, $more_link_text ) {
-	return str_replace( $more_link_text, __('Continue reading', 'wilson'), $more_link );
+	return str_replace( $more_link_text, __('阅读全文', 'wilson'), $more_link );
 }
 
 
@@ -221,7 +221,7 @@ function wilson_comment( $comment, $args, $depth ) {
 	
 	<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
 	
-		<?php __( 'Pingback:', 'wilson' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'wilson' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php __( 'Pingback:', 'wilson' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '（编辑）', 'wilson' ), '<span class="edit-link">', '</span>' ); ?>
 		
 	</li>
 	<?php
@@ -241,7 +241,7 @@ function wilson_comment( $comment, $args, $depth ) {
 											
 					<?php printf( '<cite class="fn">%1$s %2$s</cite>',
 						get_comment_author_link(),
-						( $comment->user_id === $post->post_author ) ? '<span class="post-author"> ' . __( '(Post author)', 'wilson' ) . '</span>' : ''
+						( $comment->user_id === $post->post_author ) ? '<span class="post-author"> ' . __( '（文章作者）', 'wilson' ) . '</span>' : ''
 					); ?>
 					
 					<p><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ) ?>"><?php echo get_comment_date() . ' at ' . get_comment_time() ?></a></p>
@@ -254,7 +254,7 @@ function wilson_comment( $comment, $args, $depth ) {
 			
 				<?php if ( '0' == $comment->comment_approved ) : ?>
 				
-					<p class="comment-awaiting-moderation"><?php _e( 'Awaiting moderation', 'wilson' ); ?></p>
+					<p class="comment-awaiting-moderation"><?php _e( '评论审查中', 'wilson' ); ?></p>
 					
 				<?php endif; ?>
 			
@@ -262,9 +262,9 @@ function wilson_comment( $comment, $args, $depth ) {
 				
 				<div class="comment-actions">
 				
-					<?php edit_comment_link( __( 'Edit', 'wilson' ), '', '' ); ?>
+					<?php edit_comment_link( __( '编辑', 'wilson' ), '', '' ); ?>
 					
-					<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'wilson' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+					<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( '回复', 'wilson' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 					
 					<div class="clear"></div>
 				
@@ -334,7 +334,7 @@ class Wilson_Customize {
             'title' => __( 'Wilson Options', 'wilson' ), //Visible title of section
             'priority' => 35, //Determines what order this appears in
             'capability' => 'edit_theme_options', //Capability needed to tweak
-            'description' => __('Allows you to customize some settings for Wilson.', 'wilson'), //Descriptive tooltip
+            'description' => __('允许你自定义 Wilson 主题的一些设置。', 'wilson'), //Descriptive tooltip
          ) 
       );
       
@@ -353,7 +353,7 @@ class Wilson_Customize {
          $wp_customize, //Pass the $wp_customize object (required)
          'wilson_accent_color', //Set a unique ID for the control
          array(
-            'label' => __( 'Accent Color', 'wilson' ), //Admin-visible name of the control
+            'label' => __( '强调色', 'wilson' ), //Admin-visible name of the control
             'section' => 'colors', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
             'settings' => 'accent_color', //Which setting to load and manipulate (serialized is okay)
             'priority' => 10, //Determines the order this control appears in for the specified section
