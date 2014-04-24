@@ -55,9 +55,9 @@
 		
 			<div class="archive-nav">
 			
-				<?php echo get_next_posts_link( __('Older<span> posts</span>', 'wilson')); ?>
+				<?php echo get_next_posts_link( __('&laquo; <span>较早的日志</span>', 'wilson')); ?>
 							
-				<?php echo get_previous_posts_link( __('Newer<span> posts</span>', 'wilson')); ?>
+				<?php echo get_previous_posts_link( __('<span>较新的日志</span>&raquo;', 'wilson')); ?>
 				
 				<div class="clear"></div>
 				
