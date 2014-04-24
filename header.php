@@ -123,7 +123,7 @@
 		                
 			                <div class="widget-content">
 			                
-				                <h3 class="widget-title"><?php _e("Latest posts", "wilson") ?></h3>
+				                <h3 class="widget-title"><?php _e("最新文章", "wilson") ?></h3>
 				                
 				                <ul>
 									<?php
@@ -145,11 +145,11 @@
 		                
 			                <div class="widget-content">
 			                
-			                	<h3 class="widget-title"><?php _e("Text widget", "wilson") ?></h3>
+			                	<h3 class="widget-title"><?php _e("文本小工具", "wilson") ?></h3>
 			                
 			                	<div class="textwidget">
 			                	
-			                		<p><?php _e("These widgets are displayed because you haven't added any widgets of your own yet. You can do so at Appearance > Widgets in the WordPress settings.", "wilson") ?></p>
+			                		<p><?php _e("因为你没有添加任何小工具，因此默认显示这些小工具。你可以在 Wordpress 仪表盘 外观 > 小工具 添加小工具。", "wilson") ?></p>
 								
 								</div>	
 								
