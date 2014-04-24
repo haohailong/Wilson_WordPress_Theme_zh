@@ -46,7 +46,7 @@
 			
 				<span class="date-sep"> / </span>
 			
-				<?php _e('Sticky', 'wilson'); ?>
+				<?php _e('置顶', 'wilson'); ?>
 			
 			<?php } ?>
 			
