@@ -7,20 +7,20 @@
 			<h4>
 			
 				<?php if ( is_day() ) : ?>
-					<?php _e('Date', 'wilson'); ?><span class="name"><?php echo get_the_date(); ?></span>
+					<?php _e('日期', 'wilson'); ?><span class="name"><?php echo get_the_date(); ?></span>
 				<?php elseif ( is_month() ) : ?>
-					<?php _e('Month', 'wilson'); ?><span class="name"><?php echo get_the_date('F Y'); ?></span>
+					<?php _e('按月浏览', 'wilson'); ?><span class="name"><?php echo get_the_date('Y 年 n 月'); ?></span>
 				<?php elseif ( is_year() ) : ?>
-					<?php _e('Year', 'wilson'); ?><span class="name"><?php echo get_the_date('Y'); ?></span>
+					<?php _e('按年浏览', 'wilson'); ?><span class="name"><?php echo get_the_date('Y 年'); ?></span>
 				<?php elseif ( is_category() ) : ?>
-					<?php _e('Category', 'wilson'); ?><span class="name"><?php echo single_cat_title( '', false ); ?></span>
+					<?php _e('分类', 'wilson'); ?><span class="name"><?php echo single_cat_title( '', false ); ?></span>
 				<?php elseif ( is_tag() ) : ?>
-					<?php _e('Tag', 'wilson'); ?><span class="name"><?php echo single_tag_title( '', false ); ?></span>
+					<?php _e('标签', 'wilson'); ?><span class="name"><?php echo single_tag_title( '', false ); ?></span>
 				<?php elseif ( is_author() ) : ?>
 					<?php $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
-					<?php _e('Author', 'wilson'); ?><span class="name"><?php echo ($curauth->display_name); ?></span>
+					<?php _e('作者', 'wilson'); ?><span class="name"><?php echo ($curauth->display_name); ?></span>
 				<?php else : ?>
-					<?php _e( 'Archive', 'wilson' ); ?>
+					<?php _e( '归档', 'wilson' ); ?>
 				<?php endif; ?>
 			
 			</h4>
