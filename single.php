@@ -74,13 +74,13 @@
 						
 						<span class="date-sep"> / </span>
 						
-						<?php comments_popup_link( '<span class="comment">' . __( '0 Comments', 'wilson' ) . '</span>', __( '1 Comment', 'wilson' ), __( '% Comments', 'wilson' ) ); ?>
+						<?php comments_popup_link( '<span class="comment">' . __( '暂无评论', 'wilson' ) . '</span>', __( '1 条评论', 'wilson' ), __( '% 条评论', 'wilson' ) ); ?>
 						
 						<?php if ( current_user_can( 'manage_options' ) ) { ?>
 						
 							<span class="date-sep"> / </span>
 										
-							<?php edit_post_link(__('Edit', 'wilson')); ?>
+							<?php edit_post_link(__('编辑', 'wilson')); ?>
 						
 						<?php } ?>
 												
@@ -108,9 +108,9 @@
 	
 		<div class="post-cat-tags">
 														
-			<p class="post-categories"><span><?php _e('Categories:', 'wilson') ?></span> <?php the_category(', '); ?></p>
+			<p class="post-categories"><span><?php _e('分类:', 'wilson') ?></span> <?php the_category(', '); ?></p>
 			
-			<?php if( has_tag()) { ?><p class="post-tags"><span><?php _e('Tags:', 'wilson') ?></span> <?php the_tags('', ', '); ?></p><?php } ?>
+			<?php if( has_tag()) { ?><p class="post-tags"><span><?php _e('标签:', 'wilson') ?></span> <?php the_tags('', ', '); ?></p><?php } ?>
 		
 		</div> <!-- /post-cat-tags -->
 										
@@ -120,7 +120,7 @@
 			$prev_post = get_previous_post();
 			if (!empty( $prev_post )): ?>
 			
-				<a class="post-nav-older" title="<?php _e('Previous post:', 'wilson'); echo ' ' . get_the_title($prev_post); ?>" href="<?php echo get_permalink( $prev_post->ID ); ?>">
+				<a class="post-nav-older" title="<?php _e('前一篇:', 'wilson'); echo ' ' . get_the_title($prev_post); ?>" href="<?php echo get_permalink( $prev_post->ID ); ?>">
 				
 				&laquo; <?php echo get_the_title($prev_post); ?>
 				
@@ -132,7 +132,7 @@
 			$next_post = get_next_post();
 			if (!empty( $next_post )): ?>
 				
-				<a class="post-nav-newer" title="<?php _e('Next post:', 'wilson'); echo ' ' . get_the_title($next_post); ?>" href="<?php echo get_permalink( $next_post->ID ); ?>">
+				<a class="post-nav-newer" title="<?php _e('后一篇:', 'wilson'); echo ' ' . get_the_title($next_post); ?>" href="<?php echo get_permalink( $next_post->ID ); ?>">
 				
 				<?php echo get_the_title($next_post); ?> &raquo;
 				
