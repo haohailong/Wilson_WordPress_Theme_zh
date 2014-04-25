@@ -5,7 +5,7 @@
 class wilson_flickr_widget extends WP_Widget {
 
 	function wilson_flickr_widget() {
-		parent::WP_Widget(false, $name = 'Wilson Flickr widget', array('description' => __('Displays your latest Flickr photos.', 'wilson') ));	
+		parent::WP_Widget(false, $name = 'Wilson Flickr widget', array('description' => __('显示你在 Flickr 上最新的照片。', 'wilson') ));	
 	}
 	
 	function widget($args, $instance) {
@@ -31,7 +31,7 @@ class wilson_flickr_widget extends WP_Widget {
 				
 			<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=<?php echo $fli_number; ?>&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=<?php echo $fli_id; ?>"></script>
 					
-		<p class="widgetmore"><a href="http://www.flickr.com/photos/<?php echo "$fli_id"; ?>"><?php _e('More on Flickr &raquo;', 'wilson'); ?></a></p>
+		<p class="widgetmore"><a href="http://www.flickr.com/photos/<?php echo "$fli_id"; ?>"><?php _e('更多 Flickr 照片&raquo;', 'wilson'); ?></a></p>
 		
 		<?php echo $after_widget; 
 	}
@@ -65,7 +65,7 @@ class wilson_flickr_widget extends WP_Widget {
 		
 		
 		<p>
-			<label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of images to display:', 'wilson'); ?>
+			<label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('显示图片的数量:', 'wilson'); ?>
 			<input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" class="widefat" value="<?php echo $fli_number; ?>" /></label>
 		</p>
 		
