@@ -10,7 +10,13 @@
 1. <http://haohailong.net/>  
 2. <http://shengmingzhiqing.com/>  
 
-如果有什么汉化不到位的地方，请在这里给我留言，或者给我发邮件 haohailong@gmail.com
+汉化说明：
+
+* 并没有添加 po 文件（事实上 Wordpress 本身带的语言包已经可以完成部分汉化工作）。
+* 个别只在博客后台显示的文字保留了英文，比如 Title。
+* 一些插件相关的内容并没有简体中文版，比如 dribbble 插件，只做了有限度的翻译。
+
+如果有什么汉化不到位的地方，请在这个项目页面给我留言，或者给我发邮件 <haohailong@gmail.com>
 
 后面附有原始 Readme 文件信息，分享请遵守原作者版权声明。
 
