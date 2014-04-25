@@ -29,7 +29,7 @@
 
 		<!-- Font Awesome -->
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-* 如果需要两端对齐功能，可自行在 Wordpress 后台的 Edit CSS 中添加如下代码：
+* 如果需要两端对齐功能，可自行在 Wordpress 后台的 Edit CSS 中添加如下代码：  
 		p {text-align: justify;}
 
 如果有什么汉化不到位的地方，请在这个项目页面给我留言，或者给我发邮件 <haohailong@gmail.com>
