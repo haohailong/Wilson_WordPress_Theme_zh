@@ -10,6 +10,9 @@
 		<title><?php wp_title('|', true, 'right'); ?></title>
 		 
 		<?php wp_head(); ?>
+		
+		<!-- Font Awesome -->
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	
 	</head>
 	
