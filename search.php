@@ -8,7 +8,7 @@
 		
 			<h4>
 		
-				<?php _e( 'Search', 'wilson'); ?>
+				<?php _e( '搜索', 'wilson'); ?>
 				<span class="name"><?php echo ' "' . get_search_query() . '"'; ?></span>
 			
 			</h4>
@@ -33,9 +33,9 @@
 		
 			<div class="post-nav archive-nav">
 			
-				<?php echo get_next_posts_link( __('&laquo; Older<span> posts</span>', 'wilson')); ?>
+				<?php echo get_next_posts_link( __('&laquo; <span>较早的内容</span>', 'wilson')); ?>
 							
-				<?php echo get_previous_posts_link( __('Newer<span> posts</span> &raquo;', 'wilson')); ?>
+				<?php echo get_previous_posts_link( __('<span>较新的内容</span> &raquo;', 'wilson')); ?>
 				
 				<div class="clear"></div>
 				
@@ -49,7 +49,7 @@
 		
 			<h4>
 		
-				<?php _e( 'Search', 'wilson'); ?>
+				<?php _e( '搜索', 'wilson'); ?>
 				<span class="name"><?php echo ' "' . get_search_query() . '"'; ?></span>
 			
 			</h4>
@@ -64,7 +64,7 @@
 						
 					<div class="post-content">
 					
-						<p><?php _e('No results. Try again, would you kindly?', 'wilson'); ?></p>
+						<p><?php _e('没必要找到你要的结果，再试试吧。', 'wilson'); ?></p>
 						
 						<?php get_search_form(); ?>
 					
