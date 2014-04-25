@@ -30,7 +30,7 @@ Template Name: Archive template
 					
 							<div class="archive-col">
 												
-								<h3><?php _e('Last 30 Posts', 'wilson') ?></h3>
+								<h3><?php _e('前 30 篇', 'wilson') ?></h3>
 								            
 					            <ul>
 						            <?php $archive_30 = get_posts('numberposts=30');
@@ -44,20 +44,20 @@ Template Name: Archive template
 						            <?php endforeach; ?>
 					            </ul>
 					            
-					            <h3><?php _e('Archives by Categories', 'wilson') ?></h3>
+					            <h3><?php _e('按分类归档', 'wilson') ?></h3>
 					            
 					            <ul>
 					                <?php wp_list_categories( 'title_li=', 'wilson' ); ?>
 					            </ul>
 					            
-					            <h3><?php _e('Archives by Tags', 'wilson') ?></h3>
+					            <h3><?php _e('按标签归档', 'wilson') ?></h3>
 					            
 					            <ul>
 					                <?php $tags = get_tags();
 					                
 					                if ($tags) {
 					                    foreach ($tags as $tag) {
-					                 	   echo '<li><a href="' . get_tag_link( $tag->term_id ) . '" title="' . sprintf( __( "View all posts in %s", 'wilson' ), $tag->name ) . '" ' . '>' . $tag->name.'</a></li> ';
+					                 	   echo '<li><a href="' . get_tag_link( $tag->term_id ) . '" title="' . sprintf( __( "查看所有 %s 中的贴子", 'wilson' ), $tag->name ) . '" ' . '>' . $tag->name.'</a></li> ';
 					                    }
 					                } ?>
 					            </ul>
@@ -66,25 +66,25 @@ Template Name: Archive template
 				            
 				            <div class="archive-col">
 				            
-				            	<h3><?php _e('Contributors', 'wilson') ?></h3>
+				            	<h3><?php _e('贡献者', 'wilson') ?></h3>
 				            	
 				            	<ul>
 				            		<?php wp_list_authors(); ?> 
 				            	</ul>
 				            	
-				            	<h3><?php _e('Archives by Year', 'wilson') ?></h3>
+				            	<h3><?php _e('年度归档', 'wilson') ?></h3>
 				            	
 				            	<ul>
 				            	    <?php wp_get_archives('type=yearly'); ?>
 				            	</ul>
 				            	
-				            	<h3><?php _e('Archives by Month', 'wilson') ?></h3>
+				            	<h3><?php _e('阅读归档', 'wilson') ?></h3>
 				            	
 				            	<ul>
 				            	    <?php wp_get_archives('type=monthly'); ?>
 				            	</ul>
 				            
-					            <h3><?php _e('Archives by Day', 'wilson') ?></h3>
+					            <h3><?php _e('每日归档', 'wilson') ?></h3>
 					            
 					            <ul>
 					                <?php wp_get_archives('type=daily'); ?>
@@ -98,7 +98,7 @@ Template Name: Archive template
 			            
 			            <?php if ( current_user_can( 'manage_options' ) ) : ?>
 																		
-							<p><?php edit_post_link( __('Edit', 'wilson') ); ?></p>
+							<p><?php edit_post_link( __('编辑', 'wilson') ); ?></p>
 						
 						<?php endif; ?>
 															            			                        
@@ -114,7 +114,7 @@ Template Name: Archive template
 		
 		<?php endwhile; else: ?>
 
-			<p><?php _e("We couldn't find any posts that matched your query. Please try again.", "wilson"); ?></p>
+			<p><?php _e("找不到满足要求的文章或页面，请重试。", "wilson"); ?></p>
 	
 		<?php endif; ?>
 	
