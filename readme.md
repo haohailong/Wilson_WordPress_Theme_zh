@@ -1,4 +1,4 @@
-##中文版 
+## 中文版 
 
 *(See English Version below)*
 
@@ -25,7 +25,7 @@
 
 ---
 
-##English Version
+## English Version
 
 This is a project to localize (cn_ZH) the Wordpress theme *Wilson* by Anders Norén: http://www.andersnoren.se/teman/wilson-wordpress-theme/  
 Anders Norén' Web：<http://www.andersnoren.se/>  
@@ -43,7 +43,7 @@ Hailong Hao
 
 ------
 
-The Content in original Readme file:
+> The Content in original Readme file:
 
 Copyright
 --------------
