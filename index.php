@@ -14,7 +14,7 @@
 		
 			<div class="page-title">
 			
-				<h4><?php printf( __('Page %s of %s', 'wilson'), $paged, $wp_query->max_num_pages ); ?></h4>
+				<h4><?php printf( __('第 %s 页，共 %s 页', 'wilson'), $paged, $wp_query->max_num_pages ); ?></h4>
 				
 			</div>
 						
@@ -40,9 +40,9 @@
 	
 		<div class="archive-nav">
 					
-			<?php echo get_next_posts_link( __('&laquo; Older<span> posts</span>', 'wilson')); ?>
+			<?php echo get_next_posts_link( __('&laquo; <span>较早的文章</span>', 'wilson')); ?>
 						
-			<?php echo get_previous_posts_link( __('Newer<span> posts</span> &raquo;', 'wilson')); ?>
+			<?php echo get_previous_posts_link( __('<span>较新的文章</span> &raquo;', 'wilson')); ?>
 			
 			<div class="clear"></div>
 			
