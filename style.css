@@ -15,13 +15,13 @@
 
 	0.	CSS Reset & Clearfix
 	1.	Document Setup
-	2.  Structure
+	2.  	Structure
 	3.	Header
 	4.	Navigation
 	5.	Widgets
 	6.	Main Content
 	7.	Post formats
-	8.  Single post
+	8.  	Single post
 	9.	Post Content
 	10.	Comments
 	11.	Pagination
@@ -1496,7 +1496,7 @@ li > div.comment {
 
 .searchform #s:focus { 
 	outline: none; 
-	color: #555;
+	color: #FFF;
 }
 
 .searchform .searchsubmit {
