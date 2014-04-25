@@ -150,7 +150,7 @@
 				
 	<?php endwhile; else: ?>
 
-		<p><?php _e("We couldn't find any posts that matched your query. Please try again.", "wilson"); ?></p>
+		<p><?php _e("找不到满足要求的文章或页面，请重试。", "wilson"); ?></p>
 	
 	<?php endif; ?>   
 
