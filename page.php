@@ -22,7 +22,7 @@
 					
 					<?php if ( current_user_can( 'manage_options' ) ) : ?>
 																	
-						<p><?php edit_post_link( __('Edit', 'wilson') ); ?></p>
+						<p><?php edit_post_link( __('编辑', 'wilson') ); ?></p>
 					
 					<?php endif; ?>
 														            			                        
