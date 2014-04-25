@@ -30,7 +30,7 @@ Template Name: Archive template
 					
 							<div class="archive-col">
 												
-								<h3><?php _e('前 30 篇', 'wilson') ?></h3>
+								<h3><?php _e('最新的 30 篇', 'wilson') ?></h3>
 								            
 					            <ul>
 						            <?php $archive_30 = get_posts('numberposts=30');
@@ -78,7 +78,7 @@ Template Name: Archive template
 				            	    <?php wp_get_archives('type=yearly'); ?>
 				            	</ul>
 				            	
-				            	<h3><?php _e('阅读归档', 'wilson') ?></h3>
+				            	<h3><?php _e('月度归档', 'wilson') ?></h3>
 				            	
 				            	<ul>
 				            	    <?php wp_get_archives('type=monthly'); ?>
