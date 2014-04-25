@@ -10,7 +10,15 @@
 1. <http://haohailong.net/>  
 2. <http://shengmingzhiqing.com/>  
 
-汉化说明：
+### 安装说明：
+
+1. 下载本项目。（为避免出现意外，建议将总文件夹名称改为 Wilson。尽管我在不改文件名的情况下测试成功。）
+2. 将文件夹上传至 ~/wp-content/themes；  
+	**或者**  
+	将文件夹压缩为 zip，然后通过 Wordpress 后台安装。
+3. 到 Wordpress 后台激活本主题。
+
+### 汉化说明：
 
 * 并没有添加 po 文件（事实上 Wordpress 本身带的语言包已经可以完成部分汉化工作）。
 * 个别只在博客后台显示的文字保留了英文，比如 Title。
