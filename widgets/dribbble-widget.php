@@ -7,7 +7,7 @@ include_once(ABSPATH . WPINC . '/feed.php');
 class wilson_dribbble_widget extends WP_Widget {
 
 	function wilson_dribbble_widget() {
-		parent::WP_Widget(false, $name = 'Wilson Dribbble widget', array('description' => __('Displays your latest Dribbble photos.', 'wilson') ));	
+		parent::WP_Widget(false, $name = 'Wilson Dribbble widget', array('description' => __('显示你在 Dribbble 上最新的图片', 'wilson') ));	
 	}
 	
 	function widget($args, $instance) {
