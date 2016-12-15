@@ -316,7 +316,7 @@ class Wilson_Customize {
 	  ) );
 
       // 2. Register new settings to the WP database...
-      $wp_customize->add_setting( '强调色', // No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
+      $wp_customize->add_setting( 'accent_color', // No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
             'capability'        => 'edit_theme_options', // Optional. Special permissions for accessing this setting.
             'default'           => '#FF706C', // Default setting/value to save
@@ -337,7 +337,7 @@ class Wilson_Customize {
          $wp_customize, // Pass the $wp_customize object (required)
          'wilson_accent_color', // Set a unique ID for the control
          array(
-            'label'     => __( 'Accent Color', 'wilson' ), // Admin-visible name of the control
+            'label'     => __( '强调色', 'wilson' ), // Admin-visible name of the control
             'priority'  => 10, // Determines the order this control appears in for the specified section
             'section'   => 'colors', // ID of the section this control should render in (can be one of yours, or a WordPress default section)
             'settings'  => 'accent_color', // Which setting to load and manipulate (serialized is okay)
