@@ -25,10 +25,10 @@
 * 并没有添加 po 文件（事实上 Wordpress 本身带的语言包已经可以完成部分汉化工作）。
 * 个别只在博客后台显示的文字保留了英文，比如 Title。
 * 一些插件相关的内容并没有简体中文版，比如 dribbble 插件，只做了有限度的翻译。
-* 添加了 [Font Awesome](http://fortawesome.github.io/Font-Awesome/) 符号，如果不想要请删除 header.php 中如下代码：
+* 添加了 [Font Awesome](http://fortawesome.github.io/Font-Awesome/) 符号，如果不想要请删除 header.php 中如下代码（Line 9）：
 
-		<!-- Font Awesome -->
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" href="/wp-content/themes/wilson/font-awesome/css/font-awesome.min.css">
+
 * 如果需要两端对齐功能，可自行在 Wordpress 后台的 Edit CSS 中添加如下代码：
  
  		p {text-align: justify;}
