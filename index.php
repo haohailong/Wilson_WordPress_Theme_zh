@@ -40,9 +40,9 @@
 
 		<div class="archive-nav">
 
-			<?php echo get_next_posts_link( __( '&laquo <span>较早的内容</span>', 'wilson' ) ); ?>
+			<?php echo get_next_posts_link( __( '&laquo; <span>较早的内容</span>', 'wilson' ) ); ?>
 
-			<?php echo get_previous_posts_link( __( 'Newer<span>教较新的内容</span> &raquo;', 'wilson' ) ); ?>
+			<?php echo get_previous_posts_link( __( '<span>较新的内容</span> &raquo;', 'wilson' ) ); ?>
 
 			<div class="clear"></div>
 
