@@ -172,7 +172,7 @@ function wilson_meta() { ?>
 
 			<span class="date-sep"> / </span>
 
-			<?php comments_popup_link( '<span class="comment">' . __( '0 Comments', 'wilson' ) . '</span>', __( '1 Comment', 'wilson' ), __( '% Comments', 'wilson' ) ); ?>
+			<?php comments_popup_link( '<span class="comment">' . __( '暂无评论', 'wilson' ) . '</span>', __( '一条评论', 'wilson' ), __( '% 条评论', 'wilson' ) ); ?>
 
 		<?php endif; ?>
 
