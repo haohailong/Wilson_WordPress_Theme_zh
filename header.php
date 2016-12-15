@@ -2,17 +2,12 @@
 
 <html <?php language_attributes(); ?>>
 
-	<head>
+	<head profile="http://gmpg.org/xfn/11">
 		
-		<meta charset="<?php bloginfo( 'charset' ); ?>">
+		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-																		
-		<title><?php wp_title('|', true, 'right'); ?></title>
 		 
 		<?php wp_head(); ?>
-		
-		<!-- Font Awesome -->
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	
 	</head>
 	
@@ -24,23 +19,42 @@
 							
 				<div class="blog-header">
 				
-					<h1 class="blog-title">
-						<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a>
-					</h1>
+					<?php if ( get_theme_mod( 'wilson_logo' ) ) : ?>
 					
-					<h3 class="blog-description"><?php echo esc_attr( get_bloginfo( 'description' ) ); ?></h3>
+						<a class="blog-logo" href='<?php echo home_url(); ?>' title='<?php bloginfo( 'name' ); ?> &mdash; <?php bloginfo( 'description' ); ?>' rel='home'>
+				        	<img src="<?php echo esc_url( get_theme_mod( 'wilson_logo' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>">
+				        </a>
 					
-					<div class="nav-toggle toggle">
+					<?php else : ?>
+				
+						<h1 class="blog-title">
+							<a href="<?php echo home_url(); ?>" title="<?php bloginfo( 'name' ); ?> &mdash; <?php bloginfo( 'description' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+						</h1>
+						
+						<h3 class="blog-description"><?php bloginfo( 'description' ); ?></h3>
+					
+					<?php endif; ?>
+
+				</div> <!-- .blog-header -->
+				
+				<div class="nav-toggle toggle">
+				
+					<p>
+						<span class="show"><?php _e( 'Show menu', 'wilson' ); ?></span>
+						<span class="hide"><?php _e( 'Hide menu', 'wilson' ); ?></span>
+					</p>
+				
+					<div class="bars">
 							
 						<div class="bar"></div>
 						<div class="bar"></div>
 						<div class="bar"></div>
 						
 						<div class="clear"></div>
-					
-					</div>
-
-				</div> <!-- /blog-header -->
+						
+					</div> <!-- .bars -->
+				
+				</div> <!-- .nav-toggle -->
 				
 				<div class="blog-menu">
 			
@@ -49,28 +63,26 @@
 						<?php if ( has_nav_menu( 'primary' ) ) {
 																			
 							wp_nav_menu( array( 
-							
-								'container' => '', 
-								'items_wrap' => '%3$s',
+								'container'      => '', 
+								'items_wrap'     => '%3$s',
 								'theme_location' => 'primary', 
-								'walker' => new wilson_nav_walker
-															
-							) ); } else {
+								'walker'         => new wilson_nav_walker					
+							) ); 
+                            
+                        } else {
 						
 							wp_list_pages( array(
-							
 								'container' => '',
-								'title_li' => ''
-							
-							));
+								'title_li'  => ''
+							) );
 							
 						} ?>
 												
-					 </ul>
+					 </ul> <!-- .navigation -->
 					 
 					 <div class="clear"></div>
 					 
-				</div> <!-- /blog-menu -->
+				</div> <!-- .blog-menu -->
 				
 				<div class="mobile-menu">
 						 
@@ -78,27 +90,25 @@
 					
 						<?php if ( has_nav_menu( 'primary' ) ) {
 																			
-							wp_nav_menu( array( 
-							
-								'container' => '', 
-								'items_wrap' => '%3$s',
-								'theme_location' => 'primary', 
-								'walker' => new wilson_nav_walker
-															
-							) ); } else {
-						
-							wp_list_pages( array(
-							
-								'container' => '',
-								'title_li' => ''
-							
-							));
+                            wp_nav_menu( array( 
+                                'container'      => '', 
+                                'items_wrap'     => '%3$s',
+                                'theme_location' => 'primary', 
+                                'walker'         => new wilson_nav_walker
+                            ) ); 
+
+                        } else {
+
+                            wp_list_pages( array(
+                                'container' => '',
+                                'title_li'  => ''
+                            ) );
 							
 						} ?>
 						
 					 </ul>
 					 
-				</div> <!-- /mobile-menu -->
+				</div> <!-- .mobile-menu -->
 				
 				<?php if ( is_active_sidebar( 'sidebar' ) ) : ?>
 
@@ -106,66 +116,8 @@
 					
 						<?php dynamic_sidebar( 'sidebar' ); ?>
 						
-					</div><!-- /widgets -->
-					
-				<?php else : ?>
-		
-					<div class="widgets" role="complementary">
-					
-						<div id="search" class="widget widget_search">
-						
-							<div class="widget-content">
-							
-				                <?php get_search_form(); ?>
-				                
-							</div>
-							
-		                </div> <!-- /widget_search -->
-		                
-		                <div class="widget widget_recent_entries">
-		                
-			                <div class="widget-content">
-			                
-				                <h3 class="widget-title"><?php _e("最新文章", "wilson") ?></h3>
-				                
-				                <ul>
-									<?php
-										$args = array( 'numberposts' => '5' );
-										$recent_posts = wp_get_recent_posts( $args );
-										foreach( $recent_posts as $recent ){
-											echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
-										}
-									?>
-								</ul>
-								
-							</div>
-							
-							<div class="clear"></div>
-							
-						</div> <!-- /widget_recent_entries -->
-						
-						<div class="widget widget_text">
-		                
-			                <div class="widget-content">
-			                
-			                	<h3 class="widget-title"><?php _e("文本小工具", "wilson") ?></h3>
-			                
-			                	<div class="textwidget">
-			                	
-			                		<p><?php _e("因为你没有添加任何小工具，因此默认显示这些小工具。你可以在 Wordpress 仪表盘 外观 > 小工具 添加小工具。", "wilson") ?></p>
-								
-								</div>	
-								
-							</div>
-							
-							<div class="clear"></div>
-							
-						</div> <!-- /widget_recent_entries -->
-												
-					</div> <!-- /widgets -->
+					</div><!-- .widgets -->
 					
 				<?php endif; ?>
-			
-		
 									
-			</div> <!-- /sidebar -->
+			</div> <!-- .sidebar -->
