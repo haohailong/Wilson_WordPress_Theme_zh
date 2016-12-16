@@ -50,7 +50,7 @@ add_action( 'wp_enqueue_scripts', 'wilson_load_javascript_files' );
 // Enqueue styles
 function wilson_load_style() {
 	if ( !is_admin() ) {
-	    wp_register_style( 'wilson_fonts', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Raleway:400,700' );
+	    wp_register_style( 'wilson_fonts', '//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic|Lato:400,700,400italic,700italic|Raleway:400,700' );
 	    wp_enqueue_style( 'wilson_style', get_stylesheet_uri(), array( 'wilson_fonts' ) );
 	}
 }

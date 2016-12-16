@@ -44,7 +44,7 @@
 
 				<p class="credits-right">
 
-					<span><?php printf( __( 'Theme by <a href="%s">Anders Noren</a>', 'wilson'), 'http://www.andersnoren.se' ); ?></span> &mdash;  <span><?php printf( __( 'Modified by <a href="%s">Hailong Hao</a>', 'wilson'), 'http://haohailong.net' ); ?></span> &mdash; <a title="<?php _e('To the top', 'wilson'); ?>" class="tothetop"><?php _e('Up', 'wilson' ); ?> &uarr;</a>
+					<span><?php printf( __( 'Theme by <a href="%s">Anders Noren</a>', 'wilson'), 'http://www.andersnoren.se' ); ?></span> &mdash;  <span><?php printf( __( 'Modified by <a href="%s">Hailong Hao</a>', 'wilson'), 'https://haohailong.net' ); ?></span> &mdash; <a title="<?php _e('To the top', 'wilson'); ?>" class="tothetop"><?php _e('Up', 'wilson' ); ?> &uarr;</a>
 
 				</p>
 
